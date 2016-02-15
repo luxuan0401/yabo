@@ -40,11 +40,11 @@
     {% for link in linklists[main_menu_linklist].links %}
       {% include 'nav-item' %}    
     {% endfor %}
-    <li class="cart-text-link">
+<!--     <li class="cart-text-link">
       <a href="/cart" class="CartToggle">
         {{ 'layout.cart.title' | t }} 
         <span class="cartCost {% if cart.item_count < 1 %} hidden-count {% endif %}">(<span class="money">{{ cart.total_price | money }}</span>)</span>
       </a>
-    </li>
+    </li> -->
   </ul>
 </div>

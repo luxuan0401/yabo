@@ -187,14 +187,14 @@
       <div class="grid footer-secondary-wrapper">
         <ul class="footer-secondary grid__item inline-list">
             <li><a href="/">&copy; {{ shop.name }} {{ 'now' | date: "%Y" }}</a></li>
-          {% for link in linklists[settings.footer_secondary_linklist].links %}
+<!--           {% for link in linklists[settings.footer_secondary_linklist].links %}
             <li><a href="{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
             <li>{{ powered_by_link }}</li>
-            <li><a href="http://corknine.com">{{ 'layout.footer.credit' | t }}</a></li>
+            <li><a href="http://corknine.com">{{ 'layout.footer.credit' | t }}</a></li> -->
         </ul>
 
-        {% unless shop.enabled_payment_types == empty %}
+<!--         {% unless shop.enabled_payment_types == empty %}
         <ul class="footer-payment payment-icons grid__item inline-list">
           {% for type in shop.enabled_payment_types %}
             <li>
@@ -205,7 +205,7 @@
             </li>
           {% endfor %}
         </ul>
-        {% endunless %}
+        {% endunless %} -->
 
         {% if settings.footer_social_enable %}
         <ul class="footer-social social-icons grid__item inline-list">

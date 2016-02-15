@@ -30,7 +30,15 @@
 
 {% if level < 3 %}
   <li class="{% if grandparent %}grandparent{% elsif parent %}parent{% else %}child{%endif%} {% if link.active %}main-menu--active{% endif %} kids-{{child_count}}">
-    <a href="{{ link.url }}" class="nav-link">{{ link.title | escape }}</a>
+    <a href="{{ link.url }}" class="nav-link">
+      {% if link.title == 'Home' %} 主页
+      {% elsif link.title == 'Shop' %} 产品种类
+      {% elsif link.title == 'Blog' %} 公司新闻
+      {% elsif link.title == 'About us' %} 公司介绍
+      {% else %}
+      {{ link.title | escape }}
+      {% endif %}
+    </a>
     {% if parent %}
     <a href="#" class="nav-carat"><span class="plus">+</span><span class="minus">-</span></a>
       <div class="main-menu-dropdown">

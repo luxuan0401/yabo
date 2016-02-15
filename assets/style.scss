@@ -269,11 +269,11 @@ $accentFontStack: "Montserrat", "Helvetica Neue",Arial,sans-serif;
 
 @font-face {
   font-family: 'icons';
-  src: url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/icons.eot?11992730082142168174');
-  src: url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/icons.eot?11992730082142168174#iefix') format("embedded-opentype"),
-       url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/icons.woff?11992730082142168174') format("woff"),
-       url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/icons.ttf?11992730082142168174') format("truetype"),
-       url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/icons.svg?11992730082142168174#timber-icons') format("svg");
+  src: url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/icons.eot?13385385825624551128');
+  src: url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/icons.eot?13385385825624551128#iefix') format("embedded-opentype"),
+       url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/icons.woff?13385385825624551128') format("woff"),
+       url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/icons.ttf?13385385825624551128') format("truetype"),
+       url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/icons.svg?13385385825624551128#timber-icons') format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1533,7 +1533,7 @@ select {
           appearance: none;
   background-position: right center;
   background: {
-    image: url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/ico-select.svg?11992730082142168174');
+    image: url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/ico-select.svg?13385385825624551128');
     repeat: no-repeat;
     position: right 10px center;
     color: transparent;
@@ -1797,7 +1797,7 @@ label.error {
   width: 97px;
   height: 97px;
   background: {
-    image: url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/play.svg?11992730082142168174');
+    image: url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/play.svg?13385385825624551128');
     repeat: no-repeat;
     position: center center;
     color: transparent;
@@ -1977,7 +1977,7 @@ $infoBarPadding: 5px;
 .header-logo {
   @extend .title;
   .logo-image{
-    max-height: (30px * 2);
+    max-height: (20px * 2);
   }
   text-align: left;
   margin: 0; 
@@ -2057,7 +2057,7 @@ $infoBarPadding: 5px;
     border-top-right-radius: $radius;
     border-bottom-right-radius: $radius;
     width: 23px;
-    background: url("//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/search.svg?11992730082142168174");
+    background: url("//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/search.svg?13385385825624551128");
     background-repeat: no-repeat;
     background-position:  right 3px center;
     &:focus,
@@ -2194,11 +2194,11 @@ $infoBarPadding: 5px;
   }
   .header-hamburger{
     right: 0;
-    background: url("//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/nav.svg?11992730082142168174") no-repeat left 0 center;
+    background: url("//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/nav.svg?13385385825624551128") no-repeat left 0 center;
   }
   .header-cart{
     left: 0;
-    background: url("//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/cart.svg?11992730082142168174") no-repeat left 0 center;
+    background: url("//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/cart.svg?13385385825624551128") no-repeat left 0 center;
   }
   .header-cart__bubble{
     position: absolute;
@@ -2302,17 +2302,17 @@ $infoBarPadding: 5px;
 }
 /* ie8  icon replacement*/
 .lt-ie9 .nav--mobile .header-hamburger{
-  background: url("//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/nav.png?11992730082142168174");
+  background: url("//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/nav.png?13385385825624551128");
   background-position: right center;
   background-repeat: no-repeat;
 }
 .lt-ie9 .nav--mobile .header-cart{
-  background: url("//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/cart.png?11992730082142168174");
+  background: url("//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/cart.png?13385385825624551128");
   background-position: left center;
   background-repeat: no-repeat;
 }
 .lt-ie9 .header-search .search-bar{
-  background: url("//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/search.png?11992730082142168174");
+  background: url("//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/search.png?13385385825624551128");
   background-position: right center;
   background-repeat: no-repeat;
 }
@@ -2392,8 +2392,8 @@ $infoBarPadding: 5px;
     li{ padding-top: $gutter/4; }
   }
   .header-menu > ul > li > a{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   /*================ Large MegaNav ================*/
@@ -2692,7 +2692,7 @@ ul.homepage-logos__list{
     top: 0;
     left: 0;
     background-color: $colorSplash;
-    background-image: url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/homepage_lower_image.jpg?11992730082142168174');
+    background-image: url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/homepage_lower_image.jpg?13385385825624551128');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -3883,7 +3883,7 @@ $borderSpacing: 10px;
   color: $colorTextBody;
   background-color: $colorSplash;
   @if $passwordPageUseBgImage {
-    background-image: url(//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/password-page-background.jpg?11992730082142168174);
+    background-image: url(//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/password-page-background.jpg?13385385825624551128);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: $colorTextBody;
@@ -4196,7 +4196,7 @@ $slick-opacity-not-active: 0.75 !default;
   right: 10px;
   position: absolute;
   background: {
-    image: url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/arrow-right.svg?11992730082142168174');
+    image: url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/arrow-right.svg?13385385825624551128');
     repeat: no-repeat;
     position: center center;
     color: transparent;
@@ -4207,7 +4207,7 @@ $slick-opacity-not-active: 0.75 !default;
   left: 10px;
   position: absolute;
   background: {
-    image: url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/arrow-left.svg?11992730082142168174');
+    image: url('//cdn.shopify.com/s/files/1/1153/9300/t/4/assets/arrow-left.svg?13385385825624551128');
     repeat: no-repeat;
     position: center center;
     color: transparent;

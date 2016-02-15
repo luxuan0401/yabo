@@ -1,0 +1,26 @@
+{
+  "shopify": {
+    "cart": {
+      "discounts_with_count": "{{ count }} "
+    }
+  },
+  "general": {
+    "breadcrumbs": {
+      "home": "主页",
+      "home_link_title": "回到主页"
+    },
+    "newsletter_form": {
+      "submit": "加入"
+    },
+    "search": {
+      "title": "搜索产品",
+      "placeholder": "店内搜索",
+      "submit": "搜索"
+    }
+  },
+  "cart": {
+    "general": {
+      "title": "购物车"
+    }
+  }
+}
