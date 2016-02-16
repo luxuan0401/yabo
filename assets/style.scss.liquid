@@ -4138,6 +4138,7 @@ $borderSpacing: 10px;
   }
   img {
     display: block;
+	width: 100%;
   }
   &.slick-loading img {
     display: none;
@@ -4160,6 +4161,70 @@ $borderSpacing: 10px;
   }
 }
 
+.slideshow-slides {
+	color: #ffffff;
+	.slide-content {
+		position: absolute;
+	    top: 50%;
+	    left: 120px;
+	    right: 120px;
+	    -webkit-transform: translateY(-50%);
+	    -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	    -o-transform: translateY(-50%);
+	    transform: translateY(-50%);
+		text-align: center;
+		text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+	}
+	p {
+		margin-top: 0;
+		font-size: 21px;
+		color: inherit;
+	    margin: 15px 0 0;
+		font-family: "Archivo Narrow",sans-serif;
+	    font-weight: 400;
+	    letter-spacing: 0.1em;
+	    text-transform: uppercase;
+	}
+	.slide-title {
+		font-size: 60px;
+	    line-height: 75px;
+		margin: 15px 0 0;
+		font-family: Bitter,serif;
+	    font-weight: 700;
+	}
+	a.button {
+		left: 50%;
+	    -webkit-transform: translateX(-50%);
+	    -moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    -o-transform: translateX(-50%);
+	    transform: translateX(-50%);
+		color: white !important;
+	    display: inline-block;
+	    vertical-align: middle;
+	    position: absolute;
+	    bottom: -84px;
+		border-radius: 7px;
+	    color: #ffffff;
+	    font-weight: 700;
+	    margin: 10px 0 8px 0;
+	    padding: 14px 30px;
+	    text-align: center;
+	    width: auto;
+	    border: none;
+	    font-size: 14px;
+	    letter-spacing: 0.1em;
+	    text-transform: uppercase;
+	    -webkit-appearance: none;
+		background-color: #f66e58;
+		text-decoration: none;
+	}
+	a.button:hover {
+		background-color: #D15541;
+	}
+}
+
 /*============================================================================
   #Slick Theme
 ==============================================================================*/
@@ -4167,7 +4232,7 @@ $borderSpacing: 10px;
 $slick-dot-color: $colorBorder;
 $slick-dot-color-active: $slick-dot-color ;
 $slick-dot-character: "•" !default;
-$slick-dot-size: 30px !default;
+$slick-dot-size: 50px !default;
 $slick-opacity-default: 0.75 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.75 !default;
@@ -4245,6 +4310,7 @@ $slick-opacity-not-active: 0.75 !default;
   text-align: center;
   padding: 0;
   width: 100%;
+	bottom: 0;
   li {
     position: relative;
     display: inline-block;
@@ -4265,7 +4331,7 @@ $slick-opacity-not-active: 0.75 !default;
       color: transparent;
       padding: 5px;
       cursor: pointer;
-      &:hover, &:focus {
+      &:hover {
         outline: none;
         &:before {
           opacity: $slick-opacity-on-hover;
@@ -4281,14 +4347,14 @@ $slick-opacity-not-active: 0.75 !default;
         font-size: $slick-dot-size;
         line-height: 20px;
         text-align: center;
-        color: $slick-dot-color;
+        color: #ffffff;
         opacity: $slick-opacity-not-active;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
     }
     &.slick-active button:before {
-      color: $slick-dot-color-active;
+      color: #ffffff;
       opacity: $slick-opacity-on-hover;
     }
   }
@@ -4720,4 +4786,15 @@ button.mfp-close {
       }
     }
   }
+}
+
+/* xuan's css */
+.header__wrapper {
+	position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+.main-content {
+	padding-top: 90px;
 }
