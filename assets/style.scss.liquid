@@ -257,9 +257,9 @@ $baseFontSize: 14px; // Henceforth known as 1em (assumed at 14px)
   {% assign accent-FontStack = settings.font_accent %}
 {% endif %}
 
-$titleFontStack: {{title-FontStack}};
-$bodyFontStack: {{body-FontStack}};
-$accentFontStack: {{accent-FontStack}};
+$titleFontStack: PingHei,PingFang SC,Helvetica Neue,Helvetica,Microsoft Yahei,STHeitiSC-Light,Arial,sans-serif;
+$bodyFontStack: PingHei,PingFang SC,Helvetica Neue,Helvetica,Microsoft Yahei,STHeitiSC-Light,Arial,sans-serif;
+$accentFontStack: PingHei,PingFang SC,Helvetica Neue,Helvetica,Microsoft Yahei,STHeitiSC-Light,Arial,sans-serif;
 
 .title{
   font-family: $titleFontStack;
@@ -276,13 +276,13 @@ $accentFontStack: {{accent-FontStack}};
   font-family:  $accentFontStack;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 0.8em;
+  font-size: 1.0em;
 }
 @mixin uppercase(){
   font-family:  $accentFontStack;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 0.8em;
+  font-size: 1.0em;
 }
 
 @font-face {
@@ -1125,7 +1125,7 @@ body:not(.template-index){
 a,
 .text-link {
   color: $colorLink;
-  text-decoration: underline;
+  text-decoration: none;
   background: transparent;
 }
 a:hover,
@@ -2403,6 +2403,9 @@ $infoBarPadding: 5px;
         white-space: nowrap;
         @include uppercase();
       }
+	  & > a:focus {
+        color: inherit;
+      }
     }
   }
   .main-menu-dropdown {
@@ -2560,9 +2563,9 @@ $infoBarPadding: 5px;
 .home__subtitle{
   @extend .uppercase;
   text-align: center;
-  font-weight: bold;
+  font-weight: normal;
   opacity: 0.75;
-  font-size: 1em;
+  font-size: 1.2em;
   padding-bottom: $gutter/2;
   margin-bottom: $gutter;
   position: relative;
@@ -4181,7 +4184,6 @@ $borderSpacing: 10px;
 		font-size: 21px;
 		color: inherit;
 	    margin: 15px 0 0;
-		font-family: "Archivo Narrow",sans-serif;
 	    font-weight: 400;
 	    letter-spacing: 0.1em;
 	    text-transform: uppercase;
@@ -4190,7 +4192,6 @@ $borderSpacing: 10px;
 		font-size: 60px;
 	    line-height: 75px;
 		margin: 15px 0 0;
-		font-family: Bitter,serif;
 	    font-weight: 700;
 	}
 	a.button {
@@ -4797,4 +4798,106 @@ button.mfp-close {
 
 .main-content {
 	padding-top: 90px;
+}
+
+.home-module-inline-items {
+    margin: 0 -15px;
+    font-size: 0;
+}
+
+.home-featured-collection {
+	width: 33.33%;
+	position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    font-size: 16px;
+	color: white;
+}
+
+.home-featured-collection-link {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    bottom: 0;
+    left: 15px;
+    z-index: 1;
+}
+
+.home-featured-collection-content {
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+	position: absolute;
+    top: 50%;
+    left: 15px;
+    right: 15px;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.home-featured-collection-content h3 {
+	font-weight: bold;
+}
+
+.home-module-inline-items {
+	margin: 0 -15px;
+    font-size: 0;
+}
+
+.home-blog-post {
+	position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    font-size: 16px;
+    width: 33.33%;
+}
+
+.home-blog-post h3 {
+	line-height: 1.25;
+    font-weight: 700;
+    color: #ca5c43;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.home-blog-post a {
+	color: #6e4219;
+}
+
+.rte:before, .rte:after {
+	content: " ";
+    display: table;
+}
+
+.rte>*:first-child {
+    margin-top: 0;
+}
+
+.meta {
+    font-family: "Archivo Narrow",sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.meta a {
+	color: #6e4219;
+}
+
+a:hover {
+	color: #1391a4;
+}
+
+.home-blog-container {
+	padding-left: 30px;
+}
+
+#scroll {
+	position: absolute;
+    bottom: 50px;
 }
