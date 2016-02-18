@@ -153,6 +153,8 @@
             {% assign footer_column_width = 'large--one-third' %}
         {% endcase %}
 
+		
+
         {% unless settings.footer_mainlinks == blank or settings.footer_mainlinks.empty? %}
           <div class="grid__item {{ footer_column_width }}">
             <h5>{{ linklists[settings.footer_mainlinks].title }} </h5>
@@ -184,9 +186,35 @@
         {% endif %}
       </div>
 
+	<div class="footer-body">
+        <div class="wrapper">
+            <ul class="right social">
+                <li class="wechat">
+					<img class="social-logo" src="https://cdn.shopify.com/s/files/1/1153/9300/files/wechat-logo.png?18097841460189772000" alt="weichat">
+					<span>新味公众号 "xinweicook"</span>
+				</li>
+                <li class="weibo">
+					<a href="http://weibo.com/xinweicook" target="_blank">
+						<img class="social-logo" src="https://cdn.shopify.com/s/files/1/1153/9300/files/weibo-logo.png?18097841460189772000" alt="weibo">
+						<span>关注新味官方微博</span>
+					</a>
+				</li>
+            </ul>
+        </div><div class="wrapper">
+        	<img class="weixin-image" src="https://cdn.shopify.com/s/files/1/1153/9300/files/weixinimage.png?13588271042800519734" alt="what to place here">
+		</div><div class="wrapper">
+            <ul class="contact">
+                <li><span>联系我们</span> 9:00am-7:00pm</li>
+                <li><span class="email">Email:</span> customer@xinweicook.com</li>
+                <li><span>电话:</span> (021) 5153 4950</li>
+                <li><span>QQ:</span> 263 064 2809</li>
+            </ul>
+        </div>
+    </div>
+
       <div class="grid footer-secondary-wrapper">
         <ul class="footer-secondary grid__item inline-list">
-            <li><a href="/">&copy; {{ shop.name }} {{ 'now' | date: "%Y" }}</a></li>
+            <li>&copy; {{ shop.name }} {{ 'now' | date: "%Y" }}</li>
 <!--           {% for link in linklists[settings.footer_secondary_linklist].links %}
             <li><a href="{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
