@@ -45,9 +45,12 @@
         <ul>
         {% if meganavImage %}
           <li class="meganav_image_wrapper kids-{{child_count}}">
-            <a href="{{ settings.meganav_link }}" class="meganav_image">
+            <!--<a href="{{ settings.meganav_link }}" class="meganav_image">
               <img src="{{ 'meganav.jpg' | asset_url }}" alt="" onerror='this.style.display = "none"'/>
-            </a>
+            </a>-->
+			<a class="meganav_image">
+				<img src="{{ 'meganav.jpg' | asset_url }}" alt="" onerror='this.style.display = "none"'/>
+			</a>
           </li>
           {% assign meganavImage=false %}
         {% endif %}
