@@ -17,9 +17,9 @@
                     <h3 class="uppercase h3 blog__article__title">{{ article.title }}</h3>
                     {% unless article.image %}
                         {% if article.excerpt == blank %}
-                          {{ article.content | strip_html | truncate: 200 }}
+                          {{ article.content | strip_html | truncate: 70 }}
                         {% else %}
-                          {{ article.excerpt | strip_html | truncate: 200 }}
+                          {{ article.excerpt | strip_html | truncate: 70 }}
                         {% endif %}
                     {% endunless %}
                   </div>
