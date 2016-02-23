@@ -14,7 +14,7 @@
 	           <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
 	           <div class="home-blog-post-excerpt rte">
 	               <p><img src="{{ article.image | img_url: 'grande' }}"></p>
-					<p>{{ article.content | strip_html | truncate: 114 }}</p>
+					<p>{{ article.content | strip_html | truncate: 70 }}</p>
 	             <p class="meta"><a href="{{ article.url }}">Read more</a></p>
 	           </div>
 	         </div>
