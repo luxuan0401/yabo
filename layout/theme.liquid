@@ -101,7 +101,7 @@
     </div>
     {% endif %}
 
-    <header class="site-header" role="banner">
+    <header class="site-header {% if template == 'index' %}onvideo{% endif %}" role="banner" id="site-header">
       <div class="wrapper">
         <div class="nav--desktop">
           {% include 'nav-contents' %}
@@ -308,6 +308,7 @@
   </footer>
 
   {{ 'fastclick.min.js' | asset_url | script_tag }}
+  {{ 'ScrollMagic.min.js' | asset_url | script_tag }}
   {{ 'shop.js' | asset_url | script_tag }}
 
   {% comment %}

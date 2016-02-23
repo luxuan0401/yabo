@@ -4222,7 +4222,7 @@ $borderSpacing: 10px;
 	    color: #ffffff;
 	    font-weight: 700;
 	    margin: 10px 0 8px 0;
-	    padding: 10px 20px 12px 20px
+	    padding: 10px 20px 12px 20px;
 	    text-align: center;
 	    width: auto;
 	    border: none;
@@ -4809,7 +4809,7 @@ button.mfp-close {
 }
 
 .main-content {
-	padding-top: 90px;
+	padding-top: 65px;
 }
 
 .home-module-inline-items {
@@ -5027,6 +5027,56 @@ a:hover {
 .nav--desktop .grandparent>.main-menu-dropdown ul {
 	padding-bottom: 15px;
 }
+
+#header-indicator {
+	position: absolute;
+	top: 50%;
+}
+
+.site-header {
+	background-color: #ffffff;
+	-webkit-transition: background-color 0.4s ease;
+    -moz-transition: background-color 0.4s ease;
+    -ms-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
+	border-bottom: 1px solid #c9caca;
+	.main-menu a {
+		color: #000000;
+		-webkit-transition: color 0.4s ease;
+	    -moz-transition: color 0.4s ease;
+	    -ms-transition: color 0.4s ease;
+	    -o-transition: color 0.4s ease;
+	    transition: color 0.4s ease;
+	}
+	.main-menu a:hover {
+		color: #1391a4;
+	}
+	.main-menu--active>a {
+		color: #1391a4;
+	}
+}
+
+.site-header.onvideo {
+	background-color: transparent;
+	-webkit-transition: background-color 0.4s ease;
+    -moz-transition: background-color 0.4s ease;
+    -ms-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
+	border-bottom: none;
+	.main-menu a {
+		color: #ffffff;
+		-webkit-transition: color 0.4s ease;
+	    -moz-transition: color 0.4s ease;
+	    -ms-transition: color 0.4s ease;
+	    -o-transition: color 0.4s ease;
+	    transition: color 0.4s ease;
+	}
+	.main-menu a:hover {
+		color: #1391a4;
+	}
+}
 /* header ends */
 /*
 .home-blog-post-excerpt img {
@@ -5043,3 +5093,24 @@ a:hover {
     -webkit-transform: scale(1.05);
 	-moz-transform: scale(1.05);
 }*/
+
+/* home video */
+.video {
+	margin-top: -65px;
+	margin-bottom: -10px;
+    .vdtitle {
+		position: absolute;
+	    display: block;
+	    position: absolute;
+	  	top: 50%;
+	  	left: 50%;
+	  	transform: translate(-50%, -50%);
+	    z-index: 10;
+		color: #ffffff;
+		font-size: 56px;
+	}
+	video.indexvd {
+	    width: 100%;
+	    background-color: #000;
+	}
+}
