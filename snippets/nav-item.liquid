@@ -30,11 +30,17 @@
 
 {% if level < 3 %}
   <li class="{% if grandparent %}grandparent{% elsif parent %}parent{% else %}child{%endif%} {% if link.active %}main-menu--active{% endif %} kids-{{child_count}}">
-    <a href="{{ link.url }}" class="nav-link">
+	{% if link.title == 'Shop' and template == 'index' %}
+	<a href="#scroll" class="nav-link">
+	{% else %}
+	<a href="{{ link.url }}" class="nav-link">
+	{% endif %}
+    
       {% if link.title == 'Home' %} 主页
       {% elsif link.title == 'Shop' %} 产品种类
       {% elsif link.title == 'Blog' %} 公司新闻
-      {% elsif link.title == 'About us' %} 订阅我们
+      {% elsif link.title == 'Subscribe' %} 订阅我们
+	  {% elsif link.title == 'About us' %} 关于我们
       {% else %}
       {{ link.title | escape }}
       {% endif %}
