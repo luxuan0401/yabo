@@ -37,6 +37,7 @@
   {% endunless %}
 
   <!-- CSS ================================================== -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
   {{ 'style.scss.css' | asset_url | stylesheet_tag }}
 
   <!-- Header hook for plugins ================================================== -->
@@ -101,7 +102,7 @@
     </div>
     {% endif %}
 
-    <header class="site-header {% if template == 'index' %}onvideo{% endif %}" role="banner" id="site-header">
+    <header class="site-header {% if template != 'index' %}offvideo{% endif %}" role="banner" id="site-header">
       <div class="wrapper">
         <div class="nav--desktop">
           {% include 'nav-contents' %}

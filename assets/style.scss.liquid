@@ -5052,36 +5052,7 @@ a:hover {
 	padding-bottom: 15px;
 }
 
-#header-indicator {
-	position: absolute;
-	top: 50%;
-}
-
 .site-header {
-	background-color: #ffffff;
-	-webkit-transition: background-color 0.4s ease;
-    -moz-transition: background-color 0.4s ease;
-    -ms-transition: background-color 0.4s ease;
-    -o-transition: background-color 0.4s ease;
-    transition: background-color 0.4s ease;
-	border-bottom: 1px solid #c9caca;
-	.main-menu a {
-		color: #000000;
-		-webkit-transition: color 0.4s ease;
-	    -moz-transition: color 0.4s ease;
-	    -ms-transition: color 0.4s ease;
-	    -o-transition: color 0.4s ease;
-	    transition: color 0.4s ease;
-	}
-	.main-menu a:hover {
-		color: #1391a4;
-	}
-	.main-menu--active>a {
-		color: #1391a4;
-	}
-}
-
-.site-header.onvideo {
 	background-color: transparent;
 	-webkit-transition: background-color 0.4s ease;
     -moz-transition: background-color 0.4s ease;
@@ -5098,9 +5069,36 @@ a:hover {
 	    transition: color 0.4s ease;
 	}
 	.main-menu a:focus {
-		color: #ffffff;
+		color: #ffffff !important;
 	}
 	.main-menu a:hover {
+		color: #1391a4;
+	}
+}
+
+.site-header.offvideo {
+	background-color: #ffffff;
+	-webkit-transition: background-color 0.4s ease;
+    -moz-transition: background-color 0.4s ease;
+    -ms-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
+	border-bottom: 1px solid #c9caca;
+	.main-menu a {
+		color: #000000;
+		-webkit-transition: color 0.4s ease;
+	    -moz-transition: color 0.4s ease;
+	    -ms-transition: color 0.4s ease;
+	    -o-transition: color 0.4s ease;
+	    transition: color 0.4s ease;
+	}
+	.main-menu a:focus {
+		color: #000000 !important;
+	}
+	.main-menu a:hover {
+		color: #1391a4;
+	}
+	.main-menu--active>a {
 		color: #1391a4;
 	}
 }
@@ -5129,6 +5127,8 @@ a:hover {
 }
 
 /* home video ends */
+
+/* about us page starts */
 .about-us {
     text-align: center;
     margin: 0 auto;
@@ -5174,6 +5174,63 @@ a:hover {
 		}
 	}
 }
-/* about us page starts */
 
 /* about us page ends */
+
+/* subscribe page starts */
+#mc_embed_signup{
+	background:#fff; 
+	clear:left; 
+	font-size:16px;
+	font-family: PingHei,PingFang SC,Helvetica Neue,Helvetica,Microsoft Yahei,STHeitiSC-Light,Arial,sans-serif;
+	label {
+		font-weight: normal;
+	}
+	&>h4 {
+		font-size: 41px;
+	    font-weight: 800;
+	}
+	&>p {
+		font-weight: 500;
+	    max-width: 550px;
+	    margin: 22px auto 60px;
+	    font-size: 18px;
+	    line-height: 1.5;
+		text-align: center;
+	}
+}
+
+#mc_embed_signup .size1of3 {
+	width: 33.33% !important;
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 20px;
+}
+
+#mc_embed_signup .size1of3:last-child {
+	padding-right: 0;
+}
+
+#mce-responses {
+	padding-bottom: 15px;
+}
+
+#mc_embed_signup div.mce_inline_error {
+	padding: 5px 0;
+    background-color: #fff;
+    font-weight: normal;
+    color: #6B0505;
+	font-size: 14px;
+}
+
+#mc-embedded-subscribe {
+	background-color: #5d5d5d;
+	height: 42px;
+    margin: 12px 5px 12px 0;
+    border-radius: 3px;
+	padding: 0 22px;
+	&:hover {
+		background-color: #303030;
+	}
+}
+/* subscribe page ends */

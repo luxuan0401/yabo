@@ -476,10 +476,10 @@ $('.slideshow-slides').slick({
 });
 
 /* home video header */
-if($('#header-indicator').length>0) {
-	var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 100}});
-	new ScrollMagic.Scene({triggerElement: "#header-indicator"})
-					.setClassToggle("#site-header", "onvideo") // add class toggle
+if($('#scroll').length>0) {
+	var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 0}});
+	new ScrollMagic.Scene({triggerElement: "#scroll"})
+					.setClassToggle("#site-header", "offvideo") // add class toggle
 					.addTo(controller);
 }
 
