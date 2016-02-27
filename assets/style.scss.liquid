@@ -2969,6 +2969,7 @@ ul.homepage-logos__list{
 }
 .footer-secondary{
   margin-bottom: 0;
+	padding-left: 0;
 } 
 .footer-social, 
 .footer-payment{
@@ -4983,10 +4984,17 @@ a:hover {
 }
 
 .footer-body .weixin-image {
-	height: 150px;
-	position: absolute;
+	max-width: 150px;
+    width: 100%;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%)
+}
+
+.footer-body .weixin-image-container {
+	width: 100%;
+	height: 100%;
+	position: relative;
 }
 
 .footer-body .social-logo {
@@ -4995,6 +5003,7 @@ a:hover {
 
 .footer-secondary-wrapper {
 	border-top: 2px solid #6e4219;
+	margin-left: 0;
 }
 
 .footer-secondary li {
@@ -5124,6 +5133,20 @@ a:hover {
 	    width: 100%;
 	    background-color: #000;
 	}
+	.poster {
+		display: none;
+		width: 100%;
+	}
+}
+
+.video.onMobile {
+	video.indexvd {
+		display: none;
+	}
+
+	.poster {
+		display: block;
+	}
 }
 
 /* home video ends */
@@ -5154,23 +5177,32 @@ a:hover {
 			width: 100%;
 		    height: auto;
 		}
+		h5 {
+		    font-size: 27px;
+		    font-weight: 600;
+		}
 		
+		h5.mobile {
+			display: none;
+		}
 		.poster-text {
 			position: absolute;
 			left: 50%;
-		    top: 44%;
+		    top: 30%;
 		    transform: translateX(-50%);
-			h5 {
-			    font-size: 27px;
-			    font-weight: 600;
-			}
+			width: 100%;
 			p {
 			    margin: 21px auto;
 			    font-size: 16px;
 			    font-weight: 300;
-			    width: 280px;
+			    width: 30%;
+				max-width: 280px;
 			    text-align: justify;
 			}
+		}
+		
+		.poster-image-container {
+			position: relative;
 		}
 	}
 }
@@ -5197,6 +5229,11 @@ a:hover {
 	    font-size: 18px;
 	    line-height: 1.5;
 		text-align: center;
+	}
+	.mc-field-group select {
+		height: 40px;
+		padding: 5px 10px;
+		margin-bottom: 16px;
 	}
 }
 
@@ -5234,3 +5271,164 @@ a:hover {
 	}
 }
 /* subscribe page ends */
+
+@media (max-width: 970px) {
+	.footer-body .wrapper {
+		padding: 0;
+	}
+}
+
+@media (max-width: 792px) {
+	.footer-body .wrapper:nth-of-type(2) {
+		width: 20%;
+		padding: 0 20px;
+	}
+	
+	.footer-body .wrapper:nth-of-type(2n+1) {
+		width: 40%;
+	}
+	
+	.footer-body .weixin-image {
+	    display: block;
+		left:0;
+		width: 100%;
+	    height: auto;
+	    top: 60%;
+	    transform: translateY(-50%);
+	}
+	
+	.footer-body .contact {
+		min-width: 249px;
+		overflow: visible;
+	}
+}
+
+@media (max-width: 630px) {
+	/* footer starts */
+	.site-footer {
+		padding-top: 30px;
+		padding-bottom: 0;
+		.footer-body {
+			margin-bottom: 0;
+		}
+	}
+	.footer-body .wrapper {
+		width: 100% !important;
+	    display: block;
+		height: initial;
+		.social {
+			float: none !important;
+			width: 230px;
+		    margin: 20px auto;
+		}
+		
+		.contact {
+			width: 249px;
+		    margin: 30px auto;
+		}
+	}
+	
+	.footer-body .weixin-image {
+	    position: relative;
+	    transform: none;
+	    margin: 0 auto;
+	}
+	/* footer ends */
+	
+	/* subscribe page starts */
+	#mc_embed_signup .size1of3 {
+		width: 100% !important;
+	}
+	
+	#mc_embed_signup .size1of3:last-child {
+		padding-right: 20px;
+	}
+	
+	#mc_embed_signup form {
+		margin-bottom: 0;
+	}
+	
+	.page-margin {
+		margin-top: 20px;
+	}
+	/* subscribe page ends */
+	
+	/* aboutus page starts */
+	.about-us .poster {
+		margin-bottom: 40px;
+		.poster-text {
+			position: relative;
+			left: 0;
+			top: 0;
+			transform: none;
+			margin-top: 10px;
+			p {
+				width: 100%;
+				max-width: initial;
+			}
+		}
+		h5 {
+			display: none;
+		}
+		
+		h5.mobile {
+			display: block;
+		    position: absolute;
+		    top: 60%;
+		    transform: translateY(-50%);
+		    font-size: 24px;
+		    width: 100%;
+		}
+	}
+	
+	
+	
+	
+	/* aboutus page ends */
+}
+
+@media (max-width: 597px) {
+	#scroll {
+		bottom: 61px;
+	}
+}
+
+/* mobile css */
+@media (max-width: 450px) {
+	.main-content {
+		padding-top: 126px;
+	}
+	.homepage-page {
+		padding-top: 50px;
+	    padding-bottom: 50px;
+		.wrapper {
+			padding: 0 30px;
+		}
+	}
+	
+	.page-margin {
+		margin-top: 0px;
+	}
+	
+	/* video starts */
+	.video {
+		.vdtitle {
+			font-size: 41px;
+		}
+	}
+	/*video ends */
+	
+	/* category starts */
+	.home-featured-collection {
+		display: block;
+		width: 100%;
+		margin: 30px 0;
+	}
+	/* category ends */
+	/* blogs starts */
+	.home-blog-post {
+		display: block;
+		width: 100%;
+	}
+	/* blogs ends*/
+}
