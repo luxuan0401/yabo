@@ -36,11 +36,11 @@
 	<a href="{{ link.url }}" class="nav-link">
 	{% endif %}
     
-      {% if link.title == 'Home' %} 主页
-      {% elsif link.title == 'Shop' %} 产品种类
-      {% elsif link.title == 'Blog' %} 公司新闻
-      {% elsif link.title == 'Subscribe' %} 订阅我们
-	  {% elsif link.title == 'About us' %} 关于我们
+      {% if link.title == 'Home' %} Home
+      {% elsif link.title == 'Shop' %} Categories
+      {% elsif link.title == 'Blog' %} Blog
+      {% elsif link.title == 'Subscribe' %} Subscribe
+	  {% elsif link.title == 'About us' %} About us
       {% else %}
       {{ link.title | escape }}
       {% endif %}
