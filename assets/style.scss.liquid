@@ -4306,6 +4306,18 @@ $slick-opacity-not-active: 0.75 !default;
   }
 }
 
+.slick-prev {
+	left: 20px;
+	width: 50px;
+	background-image: url("https://cdn.shopify.com/s/files/1/1153/9300/files/arrow-left.png?6891579210000054152");
+}
+
+.slick-next {
+	right: 20px;
+	width: 50px;
+	background-image: url("https://cdn.shopify.com/s/files/1/1153/9300/files/arrow-right.png?6891579210000054152");
+}
+
 /* Dots */
 
 .slick-slider {
@@ -4978,35 +4990,29 @@ a:hover {
 }
 
 /* footer styles starts */
+.site-footer-wrapper {
+	background-color: #262A30;
+	color: #ffffff;
+	font-size: 1em;
+    font-weight: 400;
+}
+
+.footer-body {
+	max-width: 800px;
+    margin: 0 auto;
+}
+
 .footer-body .wrapper {
 	width: 33.33%;
 	display: inline-block;
 	vertical-align: middle;
 }
 
-.footer-body .wrapper .social {
-	margin-top: 35px;
-}
-
-.footer-body .social li.wechat span,
-.footer-body .social li.weibo span {
-	display: inline-block;
-    vertical-align: middle;
-    margin-top: -23px;
-}
-
-.footer-body .social li.weibo .social-logo {
-    margin: 0px 10px;
-}
-
-.footer-body .wrapper .contact {
-	margin-top: 26px;
-}
-
 .footer-body .weixin-image {
-	height: 150px;
+	height: 100px;
     display: block;
     margin: 0 auto;
+	border: 3px solid #f3786b;
 }
 
 .footer-body .weixin-image-container {
@@ -5016,31 +5022,19 @@ a:hover {
 }
 
 .footer-body .social-logo {
-	height: 30px;
+	width: 50px;
+    margin: 0 auto;
+    display: block;
 }
 
 .footer-secondary-wrapper {
-	border-top: 2px solid #6e4219;
 	margin-left: 0;
-	margin-top: 40px;
 }
 
 .footer-secondary li {
 	margin-top: 30px;
-}
-
-.footer-body .contact li span {
-	font-weight: 500;
-    width: 67px;
-    display: inline-block;
-    text-align: right;
-    padding-right: 10px;
-}
-
-.footer-webchat span {
-	display: inline-block;
-    vertical-align: middle;
-    margin-top: -23px;
+	font-size: 0.8em;
+    font-weight: 600;
 }
 /* footer styles ends */
 
@@ -5247,7 +5241,7 @@ a:hover {
 
 /* home subscribe starts */
 .home-subscribe-container {
-	max-width: 900px;
+	max-width: 794px;
 	h3 {
 		text-transform: none;
 		color: #f3786b;
@@ -5255,9 +5249,39 @@ a:hover {
 		margin: 0;
 		font-weight: 300;
 		font-size: 2em;
+		letter-spacing: 0;
 	}
 	.banner-form-text {
 		font-size: 2em;
+	}
+}
+
+#subscribe-form .one-line {
+	display: block;
+	font-weight: 300;
+	
+	.banner-form-input {
+		display: inline-block;
+		position: relative;
+		
+		input {
+			width: 200px;
+			display: block;
+			border-width: 0px;
+			border-bottom: 1px;
+			border-style: dashed;
+			border-color: #b8b6b4;
+			text-align: center;
+			height: 41px;
+			font-size: 0.7em;
+			margin: 0;
+			color: #000000;
+			    font-weight: 300;
+			&:focus {
+				outline: none;
+				box-shadow: none;
+			}
+		}
 	}
 }
 
