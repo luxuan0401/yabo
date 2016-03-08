@@ -4219,11 +4219,11 @@ body {
 	}
 	p {
 		margin-top: 0;
-		font-size: 1.75em;
-		color: inherit;
+	    font-size: 2.5em;
+	    color: inherit;
 	    margin: 15px 0 0;
-	    font-weight: 300;
-		text-shadow: 2px 1px #555555;
+	    font-weight: 400;
+	    text-shadow: 2px 1px #555555;
 	}
 	.slide-title {
 		font-size: 3em;
@@ -5032,9 +5032,14 @@ a:hover {
 }
 
 .footer-secondary li {
-	margin-top: 30px;
+	margin-top: 20px;
 	font-size: 0.8em;
     font-weight: 600;
+}
+
+.site-footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
 /* footer styles ends */
 
@@ -5167,7 +5172,7 @@ a:hover {
 	}
 }
 
-#scrollCategory, #scrollAbout, #scrollSubscribe {
+#scrollCategory, #scrollAbout, #scrollSubscribe, #scroll-weidao {
 	position: absolute;
 	top: -65px;
 }
@@ -5183,13 +5188,17 @@ a:hover {
     position: absolute;
     top: 50%;
     left: 52%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 	width: 100%;
     max-width: 580px;
 	p {
 		margin: 0;
-		font-size: 2em;
-		font-weight: 300;
+		font-size: 2.5em;
+		font-weight: 400;
 	}
 	a.home-about-link {
 		margin-top: 30px;
@@ -5211,7 +5220,11 @@ a:hover {
 	    position: absolute;
 	  	top: 50%;
 	  	left: 50%;
-	  	transform: translate(-50%, -50%);
+	  	-webkit-transform: translate(-50%, -50%);
+	    -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	    -o-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
 	    z-index: 10;
 		color: #ffffff;
 		font-size: 56px;
@@ -5407,6 +5420,145 @@ a:hover {
 	}
 }
 /* subscribe page ends */
+
+/* collections page starts */
+.template-page {
+	.main-content {
+		padding-bottom: 0;
+	}
+	.site-footer-wrapper {
+		margin-top: 0;
+	}
+}
+#collections-page {
+	margin-top: 4px;
+	.collection-item {
+		color: #ffffff;
+		background-repeat: no-repeat;
+		height: 34vw;
+	    margin-bottom: 10px;
+		position: relative;
+		h3 {
+			font-size: 2.5em;
+		    font-weight: 600;
+			position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    -webkit-transform: translate(-50%, -50%);
+		    -moz-transform: translate(-50%, -50%);
+		    -ms-transform: translate(-50%, -50%);
+		    -o-transform: translate(-50%, -50%);
+		    transform: translate(-50%, -50%);
+			-webkit-transition: left 0.5s ease, right 0.5s ease;
+			-moz-transition: left 0.5s ease, right 0.5s ease;
+			-ms-transition: left 0.5s ease, right 0.5s ease;
+			-o-transition: left 0.5s ease, right 0.5s ease;
+			transition: left 0.5s ease, right 0.5s ease;	
+		}
+		.collection-item-text {
+			color: #555555;
+			position: absolute;
+			background-color: rgba(255,255,255,0.7);
+			transition: all 0.5s ease;
+			width: 50%;
+			padding: 40px;
+			font-weight: 400;
+			font-size: 1em;
+			height: 100%;
+		}
+	}
+	.collection-item-one {
+		background-image: url("https://cdn.shopify.com/s/files/1/1153/9300/files/Collections-Sama.jpg?7813616920455822352");
+		.collection-item-text { 
+			right: 100%;
+			p {
+				line-height: 1em;
+			}
+		}
+		&:hover {
+			.collection-item-text {
+				right: 50%;
+			}
+			h3 {
+				left: 75%;
+			}
+		}
+	}
+	
+	.collection-item-two {
+		background-image: url("https://cdn.shopify.com/s/files/1/1153/9300/files/Collections-w.jpg?7813616920455822352");
+		.collection-item-text { 
+			left: 100%;
+			p {
+				line-height: 1.3em;
+			}
+		}
+		&:hover {
+			.collection-item-text {
+				left: 50%;
+			}
+			h3 {
+				left: 25%;
+			}
+		}
+	}
+}
+/* collections page ends */
+
+/* new about us page starts */
+#aboutus-page {
+	.banner {
+		background-image: url("https://cdn.shopify.com/s/files/1/1153/9300/files/about-us.png?16905515664218971277");
+		background-repeat: no-repeat;
+		height: 20vw;
+	    background-position: 0% 40%;
+		position: relative;
+		h3 {
+			font-size: 2.5em;
+		    font-weight: 400;
+			color: #ffffff;
+			position: absolute;
+		    top: 50%;
+		    left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+		    -moz-transform: translate(-50%, -50%);
+		    -ms-transform: translate(-50%, -50%);
+		    -o-transform: translate(-50%, -50%);
+		    transform: translate(-50%, -50%);
+			text-transform: capitalize;
+		}
+	}
+	.page-content {
+		max-width: 1140px;
+		margin: 30px auto 70px auto;
+		.column {
+			width: 50%;
+			display: inline-block;
+			padding: 0 20px;
+			vertical-align: top;
+			.info-block {
+				background-color: #F7F7F7;
+				border-radius: 5px;
+				color: #555555;
+				padding: 10px 20px;
+			    margin-top: 40px;
+				text-align: right;
+				.info-text {
+					display: block;
+					margin-bottom: 10px;
+					text-align: left;
+					font-size: 1.2em;
+					font-weight: 400;
+				}
+				.info-icon {
+					height: 40px;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}
+/* new about us page ends */
 
 @media (max-width: 970px) {
 	.footer-body .wrapper {
