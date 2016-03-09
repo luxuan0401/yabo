@@ -4832,12 +4832,17 @@ button.mfp-close {
 }
 
 .home-featured-collection {
-	width: 48%;
+	width: 50%;
     position: relative;
     display: inline-block;
     vertical-align: top;
-    padding: 0 5%;
     color: white;
+	&:first-child {
+		padding: 0 5% 0 10%;
+	}
+	&:last-child {
+		padding: 0 10% 0 5%;
+	}
 	.home-featured-collection-image-container {
 		position: relative;
 	}
@@ -4850,6 +4855,7 @@ button.mfp-close {
 		font-size: 1em;
 		.readmore-container {
 			text-align: center;
+			margin-bottom: 5px;
 			.readmore {
 				border: 1px solid #6e4219;
 			    padding: 5px;
@@ -5187,26 +5193,33 @@ a:hover {
     color: #ffffff;
     position: absolute;
     top: 50%;
-    left: 52%;
+    left: 58%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 	width: 100%;
-    max-width: 580px;
+    max-width: 780px;
 	p {
 		margin: 0;
 		font-size: 2.5em;
 		font-weight: 400;
+		text-shadow: 2px 1px #555555;
 	}
 	a.home-about-link {
 		margin-top: 30px;
 	    color: #ffffff;
 	    font-family: $titleFontStack;
 		text-align: center;
-	    display: inline-block;
-	    float: right;
+	    display: block;
+	    position: absolute;
+	    left: 50%;
+	    transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+	    -moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    -o-transform: translateX(-50%);
 	}
 }
 /* home about ends */
@@ -5269,30 +5282,46 @@ a:hover {
 	}
 }
 
-#subscribe-form .one-line {
-	display: block;
-	font-weight: 300;
+#subscribe-form {
+	margin-bottom: 70px;
+	.subscribe-button {
+		display: block;
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+	    -moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    -o-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	}
+	.one-line {
+		display: block;
+		font-weight: 300;
 	
-	.banner-form-input {
-		display: inline-block;
-		position: relative;
+		.banner-form-input {
+			display: inline-block;
+			position: relative;
 		
-		input {
-			width: 200px;
-			display: block;
-			border-width: 0px;
-			border-bottom: 1px;
-			border-style: dashed;
-			border-color: #b8b6b4;
-			text-align: center;
-			height: 41px;
-			font-size: 0.7em;
-			margin: 0;
-			color: #000000;
-			    font-weight: 300;
-			&:focus {
-				outline: none;
-				box-shadow: none;
+			input {
+				width: 191px;
+				display: block;
+				border-width: 0px;
+				border-bottom: 1px;
+				border-style: dashed;
+				border-color: #b8b6b4;
+				text-align: center;
+				height: 41px;
+				font-size: 0.7em;
+				margin: 0;
+				color: #000000;
+				    font-weight: 300;
+				&:focus {
+					outline: none;
+					box-shadow: none;
+				}
+				&.food-input {
+					width: 245px;
+				}
 			}
 		}
 	}
@@ -5456,15 +5485,28 @@ a:hover {
 			transition: left 0.5s ease, right 0.5s ease;	
 		}
 		.collection-item-text {
-			color: #555555;
+			color: #303030;
 			position: absolute;
 			background-color: rgba(255,255,255,0.7);
 			transition: all 0.5s ease;
 			width: 50%;
 			padding: 40px;
 			font-weight: 400;
-			font-size: 1em;
+			font-size: 1.12em;
 			height: 100%;
+			.text-content-container {
+				position: relative;
+			    height: 100%;
+				.text-content {
+					position: absolute;
+					top: 50%;
+					-webkit-transform: translateY(-50%);
+				    -moz-transform: translateY(-50%);
+				    -ms-transform: translateY(-50%);
+				    -o-transform: translateY(-50%);
+				    transform: translateY(-50%);
+				}
+			}
 		}
 	}
 	.collection-item-one {
@@ -5490,7 +5532,7 @@ a:hover {
 		.collection-item-text { 
 			left: 100%;
 			p {
-				line-height: 1.3em;
+				line-height: 1.5em;
 			}
 		}
 		&:hover {
@@ -5551,7 +5593,7 @@ a:hover {
 					font-weight: 400;
 				}
 				.info-icon {
-					height: 40px;
+					height: 45px;
 					margin-right: 10px;
 				}
 			}
