@@ -4308,14 +4308,16 @@ $slick-opacity-not-active: 0.75 !default;
 
 .slick-prev {
 	left: 20px;
-	width: 50px;
-	background-image: url("https://cdn.shopify.com/s/files/1/1153/9300/files/arrow-left.png?6891579210000054152");
+    width: 60px;
+    background-position: left;
+	background-image: url("https://cdn.shopify.com/s/files/1/1153/9300/files/arrow-left.png?5603467607520664002");
 }
 
 .slick-next {
 	right: 20px;
-	width: 50px;
-	background-image: url("https://cdn.shopify.com/s/files/1/1153/9300/files/arrow-right.png?6891579210000054152");
+    width: 60px;
+    background-position: right;
+	background-image: url("https://cdn.shopify.com/s/files/1/1153/9300/files/arrow-right.png?5603467607520664002");
 }
 
 /* Dots */
@@ -5049,8 +5051,8 @@ a:hover {
 }
 /* footer styles ends */
 
-/* subscribe form */
-#subscribe-form {
+/* subscribe form page */
+#subscribe-form-discard {
 	.row {
 		margin: 10px 0;
 	}
@@ -5283,7 +5285,7 @@ a:hover {
 }
 
 #subscribe-form {
-	margin-bottom: 70px;
+	margin-bottom: 90px;
 	.subscribe-button {
 		display: block;
 		position: absolute;
@@ -5467,6 +5469,8 @@ a:hover {
 		height: 34vw;
 	    margin-bottom: 10px;
 		position: relative;
+		background-position: center center;
+		background-size: cover;
 		h3 {
 			font-size: 2.5em;
 		    font-weight: 600;
@@ -5554,6 +5558,7 @@ a:hover {
 		background-repeat: no-repeat;
 		height: 20vw;
 	    background-position: 0% 40%;
+		background-size: cover;
 		position: relative;
 		h3 {
 			font-size: 2.5em;
