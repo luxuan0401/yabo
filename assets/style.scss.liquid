@@ -5157,7 +5157,7 @@ a:hover {
 .home-module-inline-items {
 	margin-bottom: 0;
 }
-.global-button {
+.global-button, input[type=submit].global-button {
 	color: white !important;
     display: inline-block;
     border-radius: 7px;
@@ -5175,6 +5175,7 @@ a:hover {
 	&:hover {
 		background-color: #D15541;
 	}
+	outline: none;
 }
 
 #scrollCategory, #scrollAbout, #scrollSubscribe, #scroll-weidao {
@@ -5265,6 +5266,10 @@ a:hover {
 /* home video ends */
 
 /* home subscribe starts */
+#homepage-subscribe-form {
+	padding-top: 70px;
+}
+
 .home-subscribe-container {
 	max-width: 794px;
 	h3 {
@@ -5281,7 +5286,7 @@ a:hover {
 	}
 }
 
-#subscribe-form {
+#mc-embedded-subscribe-form {
 	margin-bottom: 90px;
 	.subscribe-button {
 		display: block;
@@ -5300,7 +5305,6 @@ a:hover {
 		.banner-form-input {
 			display: inline-block;
 			position: relative;
-		
 			input {
 				width: 191px;
 				display: block;
@@ -5323,6 +5327,31 @@ a:hover {
 				}
 			}
 		}
+	}
+}
+
+#mc_embed_signup {
+	div.mce_inline_error { 
+		font-size: 13px !important;
+	    background: none !important;
+	    color: #e85c41 !important;
+	    font-weight: 500 !important;
+	    position: absolute;
+	    top: -16px;
+	    width: 200px;
+	    text-align: center;
+	} 
+	#mce-error-response {
+		font-size: 18px;
+	    color: #e85c41;
+	    font-weight: 500;
+		color: #e85c41;
+	}
+	#mce-success-response {
+		font-size: 18px;
+	    color: #e85c41;
+	    font-weight: 500;
+		color: #529214;
 	}
 }
 
@@ -5387,6 +5416,7 @@ a:hover {
 /* about us page ends */
 
 /* subscribe page starts */
+/*
 #mc_embed_signup{
 	background:#fff; 
 	clear:left; 
@@ -5429,7 +5459,7 @@ a:hover {
 	padding-bottom: 15px;
 }
 
-#mc_embed_signup div.mce_inline_error {
+#mc_embed_signup .div.mce_inline_error {
 	padding: 5px 0;
     background-color: #fff;
     font-weight: normal;
@@ -5447,6 +5477,7 @@ a:hover {
 		background-color: #555555;
 	}
 }
+*/
 /* subscribe page ends */
 
 /* collections page starts */
@@ -5668,6 +5699,7 @@ a:hover {
 	/* footer ends */
 	
 	/* subscribe page starts */
+	/*
 	#mc_embed_signup .size1of3 {
 		width: 100% !important;
 	}
@@ -5683,6 +5715,7 @@ a:hover {
 	.page-margin {
 		margin-top: 20px;
 	}
+	*/
 	/* subscribe page ends */
 	
 	/* aboutus page starts */
