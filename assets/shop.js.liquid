@@ -481,13 +481,11 @@ function isMobile() {
 	return (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));	
 }
 
-if($('#scroll').length>0 && !isMobile()) {
+if($('#scroll').length>0) {
 	var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 0}});
 	new ScrollMagic.Scene({triggerElement: "#scroll"})
 					.setClassToggle("#site-header", "offvideo") // add class toggle
 					.addTo(controller);
-} else {
-	$('#site-header').addClass('offvideo');
 }
 
 if(isMobile()) {
