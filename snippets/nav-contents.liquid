@@ -11,7 +11,8 @@
     {% endif %}
       {% if settings.logo_use_image %}
         <a href="/" itemprop="url">
-          <img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" itemprop="logo" class="logo-image" onerror='this.style.display = "none"'/>
+          <img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" itemprop="logo" class="logo-image off-video-logo" onerror='this.style.display = "none"'/>
+			<img src="{{ 'logo_white.png' | asset_url }}" alt="{{ shop.name }}" itemprop="logo" class="logo-image on-video-logo" onerror='this.style.display = "none"'/>
         </a>
       {% else %}
         <a href="/" itemprop="url">{{ shop.name }}</a>
