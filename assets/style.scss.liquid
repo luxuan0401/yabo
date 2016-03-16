@@ -5124,11 +5124,15 @@ a:hover {
 		font-weight: 500;
 	}
 	.on-video-logo {
-		display: block;
+		display: block !important;
 	}
 	.off-video-logo {
 		display: none;
 	}
+}
+
+.site-header.showMobile .on-video-logo {
+	display: none;
 }
 
 .site-header.offvideo {
@@ -5152,7 +5156,7 @@ a:hover {
 		color: #1391a4;
 	}
 	.on-video-logo {
-		display: none;
+		display: none !important;
 	}
 	.off-video-logo {
 		display: block;
